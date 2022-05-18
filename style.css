@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.top-block{
+    max-height: 860px;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.homeImg {
+    width: 100%;
+    max-height: 860px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+.quote {
+    margin-top: 100px;
+    width: 100%;
+    max-height: 880px;
+    height: 220px;
+    background: rgba(33, 33, 67, 0.06);
+    position: relative;
+}
+
+.quote span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+main {
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    position: relative;
+    gap: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.big-block {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-basis: content;
+}
+
+.small-blocks{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-basis: content;
+    gap: 20px;
+}
+
+.small-blocks div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.small-blocks div div{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+.content img{
+    width:100%;
+    border-radius: 30px;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    gap: 2vw;
+}
+
+.big-header-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: bold;  
+    text-shadow: 0px 0px 2px #000; 
+    gap: 1vw;
+}
+
+.small-header-text{ 
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;  
+    text-shadow: 0px 0px 2px #000;
+}
+
+.big-block span{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 2vw;
+    color: white;
+}
+
+.big-block:hover, .small-blocks div div:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.small-blocks img {
+    height: 15vw;
+}
+
+.header-text-center{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;  
+    text-shadow: 0px 0px 2px #000; 
+}
