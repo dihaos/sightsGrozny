@@ -23,11 +23,11 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-top: 2.5%;
     position: absolute;
     top: 0;
-    width: 100%;
+    left: 9%;
     color: white;
     font-size: 1.7vw;
     align-items: center;
@@ -324,7 +324,7 @@ footer{
         font-size: 28px;
     }
 
-    .footer-block-1{
+    .footer-block-1, .footer-block-2{
         font-size: 22px;
     }
 
@@ -337,6 +337,7 @@ footer{
     }
 
     .header{
+        left: 120px;
         font-size: 24px;
         padding-top: 34px;
     }
