@@ -24,11 +24,13 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 2.5%;
     position: absolute;
     top: 0;
     width: 100%;
     color: white;
+    font-size: 1.7vw;
+    align-items: center;
 }
 
 .quote {
@@ -57,7 +59,7 @@ header {
     font-size: 15px;
 }
 
-.home-page {
+/* .home-page {
     margin-top: 100px;
     width: 90%;
     display: flex;
@@ -65,36 +67,33 @@ header {
     gap: 20px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
-.home-page .content {
+/* .home-page .content {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
+} */
 
 .big-block {
-    display: flex;
     position: relative;
+}
+
+.small-blocks a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2vw;
     width: 100%;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    flex-basis: content;
 }
 
 .small-blocks {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 100%;
-    flex-basis: content;
-    gap: 20px;
 }
 
-.small-blocks div {
+/* .small-blocks div {
     display: flex;
     width: 100%;
     height: 100%;
@@ -108,11 +107,11 @@ header {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-}
+} */
 
 .home-page .content img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 12px;
 }
 
 .header-text {
@@ -139,7 +138,7 @@ header {
     flex-direction: column;
     font-size: 2vw;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     text-shadow: 0px 0px 2px #000;
 }
 
@@ -152,7 +151,7 @@ header {
 }
 
 .big-block:hover,
-.small-blocks div a:hover {
+.small-blocks img:hover {
     transform: scale(1.05);
     transition: 0.3s;
     cursor: pointer;
@@ -229,6 +228,77 @@ a{
     color: #FFFFFF;
 }
 
+footer{
+    width: 90%;
+    height: 200px;
+    margin-top: 100px;  
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer-block-1, .footer-block-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.footer-block-3 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer-block-1 .name{
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+
+.home-page{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    gap: 40px;
+}
+
+.home-page div{
+    display: flex;
+    gap: 20px;
+}
+
+.home-page img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.home-page .small-blocks img {
+    height: 14vw;
+}
+
+.home-page div:nth-child(1), .home-page div a:nth-child(1){
+    flex: 0 0 50%;
+}
+
+
 @media screen and (min-width: 1400px) {
     .header-text{
         left: 120px;
@@ -248,5 +318,26 @@ a{
         top: 644px;
         font-size: 20px;
         padding: 12px 42px;
+    }
+
+    .footer-block-1 .name{
+        font-size: 28px;
+    }
+
+    .footer-block-1{
+        font-size: 22px;
+    }
+
+    .home-page .small-blocks img {
+        height: 215px;
+    }
+
+    .small-blocks a, .big-block span {
+        font-size: 26px;
+    }
+
+    .header{
+        font-size: 24px;
+        padding-top: 34px;
     }
   }
